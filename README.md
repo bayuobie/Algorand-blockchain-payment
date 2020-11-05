@@ -12,7 +12,7 @@ There are two ways of sending and retrieving transactions on Algorand. First opt
 We used the testnets for all testing but you could just switch the API endpoints in either Purestake or AlgoExplorer to use the mainnet when you are ready. It is really that simple. 
 
 # Deployment
-This is a PHP implementation which will run on any linux server that supports PHP. This implementation was done on a Xampp localhost. Do deploy and test this
+This is a PHP implementation which will run on any linux server that supports PHP. This implementation was done on a Xampp localhost. To deploy and test this
 1. Simple upload the folder into the htdocs folder or on your public_html on a shared hosting for example. Run the index.php script to start the script
 2. YOu will need to created the databases using the tblproducts.sql
 3. We have included the Algosdk as but you should import this using NPM or always make sure you link to the latest version
