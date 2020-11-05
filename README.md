@@ -10,3 +10,16 @@ There are two ways of sending and retrieving transactions on Algorand. First opt
 
 # Testnet vs Mainnet
 We used the testnets for all testing but you could just switch the API endpoints in either Purestake or AlgoExplorer to use the mainnet when you are ready. It is really that simple. 
+
+# Deployment
+This is a PHP implementation which will run on any linux server that supports PHP. This implementation was done on a Xampp localhost. Do deploy and test this
+1. Simple upload the folder into the htdocs folder or on your public_html on a shared hosting for example. Run the index.php script to start the script
+2. YOu will need to created the databases using the tblproducts.sql
+3. We have included the Algosdk as but you should import this using NPM or always make sure you link to the latest version
+4. In the js/scrips.js file, set the address to receive payments. The Mnemonic keys of this address will be used to sign transactions as well
+5. In check.php, this is why the Algorand payment transaction processing happens. You can edit as much as you want. 
+
+# Note
+This is meant to be a guide to PHP developers to understand how to interact with the chain. So no framework was used neither did is use an OOP approach which may be far advanced for a beginner. An experienced developer should be able to abstract this for any higher level implemenation. 
+
+You are free to contribute to this and improve it. 
